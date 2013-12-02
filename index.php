@@ -29,8 +29,8 @@ switch ($act){
         while ($row = $sel->fetch_assoc()){
             
             $row['date']=date($formatstr,$row['date']);
-            if (mb_strlen($row['content'])>60){
-                $row['content']=mb_substr(strip_tags($row['content']),0,57).'...';
+            if (mb_strlen($row['content'])>450){
+                $row['content']=mb_substr(strip_tags($row['content']),0,447).'...';
             }
             $row['content']=  nl2br($row['content']);
             $row['header']=htmlspecialchars($row['header']);

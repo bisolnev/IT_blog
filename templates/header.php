@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Blog</title>
+    <title>Блог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -34,14 +34,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="?">Blog for IT Hacker's</a>
+          <a class="brand" href="?">Блог за хакери</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="?">Начало</a></li>
               <?php if (IS_ADMIN): ?>
-                <li><a href="?act=logout">Admin (Logout)</a></li>
+                <li><a href="?act=logout">Админ (излез)</a></li>
               <?php else: ?>
-                <li><a href="?act=login">Login</a></li>
+                <li><a href="?act=login">Влез</a></li>
               <?php endif ?>
             </ul>
           </div>
