@@ -62,7 +62,7 @@
     <textarea  class="input-xxlarge"  name="content" form="useform"></textarea>
     <div style="padding-top: 10px;">
         <button style="submit" class="btn">
-        Post
+        Изпрати
         </button>
     </div>
 </form>
