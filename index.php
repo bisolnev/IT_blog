@@ -14,7 +14,7 @@ define ('IS_ADMIN', isset($_SESSION['IS_ADMIN']));
 switch ($act){
     case 'list':
         $page = isset($_GET['page']) ?  max(1,intval($_GET['page'])) : 1;
-        $limit = 10;
+        $limit = 5;
         $offset = ($page -1)* $limit;
         $records = array();
         $pages_result = $mysqli->query("SELECT COUNT(*)
