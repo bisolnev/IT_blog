@@ -32,7 +32,7 @@
          <?php endif ?>
      </h3>
      <p><?=$row['content']?></p>
-        <span class="date"><?=$row['date']?></span>
+       <i> [<span class="date"><?=$row['date']?></span>]<i/>
         <span class="author"><i class="icon-user"></i><?=$row['author']?></span>
      <div class="comments">
          <a href="?act=view-entry&id=<?=$row['id']?>"><?=$row['comments']?> comment's</a></div>
