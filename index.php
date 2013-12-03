@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-type: text/html; charset=UTF-8');
-$mysqli = new mysqli('localhost' ,'root','123','blog') or die ('Cannot connect to datebase!');
+$mysqli = new mysqli('localhost' ,'root','','blog') or die ('Cannot connect to datebase!');
 //$mysqli -> select_db(blog) or die ('Cannot select datebase!');
 $mysqli->set_charset('UTF-8');
 mb_internal_encoding('UTF-8');
@@ -139,7 +139,7 @@ switch ($act){
         header('Location: .');
         break;
     case 'do-login':
-        if ($_POST['login']=='login' && $_POST['password']=='123'){
+        if ($_POST['login']=='admin' && $_POST['password']=='123'){
             $_SESSION['IS_ADMIN']=true;
             header('Location: .');
         }else{
